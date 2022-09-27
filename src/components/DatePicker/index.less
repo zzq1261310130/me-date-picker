@@ -1,0 +1,123 @@
+.datePicker {
+  margin: 0 auto;
+  display: inline-block;
+  width: 280px;
+  height: 308px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+    0 9px 28px 8px #0000000d;
+  user-select: none;
+
+  .dateHead {
+    display: flex;
+    height: 40px;
+    padding: 0 15px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    .doubleLeft {
+      float: left;
+      margin-right: 8px;
+      color: rgb(191, 191, 191);
+      :hover {
+        color: rgb(38, 38, 38);
+        cursor: pointer;
+      }
+    }
+    .left {
+      float: left;
+      color: rgb(191, 191, 191);
+      :hover {
+        color: rgb(38, 38, 38);
+        cursor: pointer;
+      }
+    }
+    .middle {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      user-select: none;
+      :hover {
+        color: rgb(24, 144, 255);
+        cursor: pointer;
+      }
+      .year {
+        margin: 0 10px 0 0;
+      }
+
+      input {
+        width: 36px;
+        margin: 0 10px 0 0;
+        border: none;
+        outline: none;
+        border: 1.5px solid rgb(24, 144, 255);
+        border-radius: 4px;
+      }
+    }
+    .doubleRight {
+      float: left;
+      margin-left: 8px;
+      color: rgb(191, 191, 191);
+      :hover {
+        color: rgb(38, 38, 38);
+        cursor: pointer;
+      }
+    }
+    .right {
+      float: right;
+      color: rgb(191, 191, 191);
+      :hover {
+        color: rgb(38, 38, 38);
+        cursor: pointer;
+      }
+    }
+  }
+  .dateBody {
+    width: 256px;
+    height: 210px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    .week {
+      display: flex;
+      height: 30px;
+      justify-content: space-around;
+      align-items: center;
+
+      :hover {
+        background-color: rgb(241, 241, 241);
+        cursor: pointer;
+      }
+      .day {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+      .notCurMonth {
+        color: rgb(191, 191, 191);
+      }
+      .isToday {
+        border: 1px solid rgb(24, 144, 255);
+      }
+      .chosedDay {
+        background-color: rgb(24, 144, 255);
+        color: white;
+      }
+    }
+  }
+  .dateFooter {
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 144, 255);
+    :hover {
+      cursor: pointer;
+    }
+  }
+}
